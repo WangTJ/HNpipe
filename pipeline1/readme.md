@@ -2,12 +2,12 @@
 
 ## Tidyxl.R
 
-This script is designed to extract the information from the unformatted Lab Excel file to a well formatted RData file.
+The script is designed to extract the information from the unformatted Lab Excel file to a well formatted RData file.
 
 Users should run the script with the argument of the target filename in the terminal.
 
 
-> $Rscript --vanilla Tidyxl.R
+> $Rscript --vanilla Tidyxl.R filename
 
 
 For example,
@@ -48,3 +48,19 @@ And the results csv files can be combined by:
 ```{shell}
 cat *.csv | sort | uniq > combined.csv
 ```
+
+## REDup.R
+
+The script is designed to transfer long formatted csv file got from *Tidyxl.R* to REDcap uploadable csv file.
+
+Users should run the script with the argument of the target filename in the terminal.
+
+> $Rscript --vanilla Tidyxl.R filename
+
+For example,
+
+```{shell}
+Rscript --vanilla Redup.R combined.csv
+```
+
+The generated *REDcapcombined.csv* is uploadable.
