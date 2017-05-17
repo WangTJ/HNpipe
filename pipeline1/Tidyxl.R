@@ -118,7 +118,7 @@ mature$Days.post.engraftment <- as.numeric(mature$Days.post.engraftment)
 mature$Days.post.trt <- as.numeric(mature$Days.post.trt)
 
 FormatData <- mature[c("Mouse", "PDX", "Cage", "Passage", "Engraftment.Date", "Trt.start", "Side", "Treatment",
-                  "Days.post.engraftment", "Days.post.trt", "long.axis", "short.axis", "Volume", "Weight")]
+                "Date",  "Days.post.engraftment", "Days.post.trt", "long.axis", "short.axis", "Volume", "Weight")]
 rm(mature)
 #=================================================================================
 
